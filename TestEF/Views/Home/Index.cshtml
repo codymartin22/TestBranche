@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <div class="row">
+        <div class="col-md-6">SingleTon</div><div class="col-md-6">@ViewBag.number1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Scoped</div><div class="col-md-6">@ViewBag.number2</div>
+        <div class="col-md-6">Scoped_1</div><div class="col-md-6">@ViewBag.number2_1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Transient</div><div class="col-md-6">@ViewBag.number3</div>
+        <div class="col-md-6">Transient_1</div><div class="col-md-6">@ViewBag.number3_1</div>
+    </div>
+    <form asp-action="Index" asp-controller="Home" method="Get">
+        <input type="submit" value="Gen GUID"/>
+    </form>
+</div>
